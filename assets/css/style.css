@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.container .title_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.container .title_info .reliable {
+  color: hsl(229, 6%, 66%);
+  font-size: 24px;
+}
+.container .title_info h3 {
+  color: hsl(234, 12%, 34%);
+  font-size: 24px;
+  font-weight: 650;
+}
+.container .title_info .title_text {
+  color: hsl(229, 6%, 66%);
+  font-size: 12px;
+  text-align: center;
+  width: 400px;
+}
+.container .card_block {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.container .card_block .sec2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.container .card_block .sec1 .card,
+.sec2 .card,
+.sec3 .card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 30px;
+  max-width: 320px;
+  width: 100%;
+  border-radius: 6px;
+  height: 220px;
+}
+.container .card_block .sec1 .card .card_text,
+.sec2 .card .card_text,
+.sec3 .card .card_text {
+  color: hsl(229, 6%, 66%);
+  font-size: 12px;
+  margin: 12px 0;
+}
+.container .card_block .sec1 .card .img,
+.sec2 .card .img,
+.sec3 .card .img {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.container .card_block .sec1 .card1 {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+.container .card_block .sec2 .card2 {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+.container .card_block .sec2 .card3 {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+.container .card_block .sec3 .card4 {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+@media screen and (max-width: 1060px) {
+  .container .card_block {
+    grid-template-columns: auto;
+  }
+}
